@@ -38,7 +38,8 @@ FROM posts;
 -- Exercise 7
 SELECT user_id, COUNT(comments)
 FROM comments
-GROUP BY user_id;
+GROUP BY user_id
+ORDER BY count DESC;
 
 
 
